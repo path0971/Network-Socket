@@ -1,0 +1,22 @@
+﻿  UDPClient.cpp
+  Please define _WIN32_WINNT or _WIN32_WINDOWS appropriately. For example:
+  - add -D_WIN32_WINNT=0x0601 to the compiler command line; or
+  - add _WIN32_WINNT=0x0601 to your project's Preprocessor Definitions.
+  Assuming _WIN32_WINNT=0x0601 (i.e. Windows 7 target).
+D:\Cplussources\SocketProgramming\2\UDPServer\UDPServer\UDPClient.cpp(16,59): error C2039: 'from_string': 'boost::asio::ip::address'의 멤버가 아닙니다.
+      D:\Ddownload\boost_1_89_0\boost_1_89_0\boost\asio\ip\address.hpp(48,7):
+      'boost::asio::ip::address' 선언을 참조하십시오.
+  
+D:\Cplussources\SocketProgramming\2\UDPServer\UDPServer\UDPClient.cpp(16,59): error C3861: 'from_string': 식별자를 찾을 수 없습니다.
+D:\Cplussources\SocketProgramming\2\UDPServer\UDPServer\UDPClient.cpp(16,32): error C2668: 'boost::asio::ip::basic_endpoint<boost::asio::ip::udp>::basic_endpoint': 오버로드된 함수에 대한 호출이 모호합니다.
+      D:\Ddownload\boost_1_89_0\boost_1_89_0\boost\asio\ip\basic_endpoint.hpp(95,3):
+      'boost::asio::ip::basic_endpoint<boost::asio::ip::udp>::basic_endpoint(const boost::asio::ip::address &,boost::asio::ip::port_type) noexcept'일 수 있습니다.
+      D:\Ddownload\boost_1_89_0\boost_1_89_0\boost\asio\ip\basic_endpoint.hpp(86,3):
+      또는       'boost::asio::ip::basic_endpoint<boost::asio::ip::udp>::basic_endpoint(const InternetProtocol &,boost::asio::ip::port_type) noexcept'
+          with
+          [
+              InternetProtocol=boost::asio::ip::udp
+          ]
+      D:\Cplussources\SocketProgramming\2\UDPServer\UDPServer\UDPClient.cpp(16,32):
+      인수 목록 '(<error type>, int)'을(를) 일치시키는 동안
+  
